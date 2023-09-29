@@ -10,7 +10,9 @@ If you want to know what needs to be done to get your static site hosted on GitH
 - The video on How to Host a Website On Github - https://youtu.be/8hrJ4oN1u_8
 - How To add a Custom Domain On Github Pages - https://youtu.be/mPGi1IHQxFM
 
-# When you're ready to publish the site then either rename this file to README.txt or delete it altogether. 
+## All you need to tie this site to josephshams.com is to add some A records to AWS Route53 which is our domain registrar and DNS server - This bit I'll do for you.  
+## When you're ready to publish the site then either rename this file to README.txt or delete it altogether. 
 
-Git hub will give you SSH for free so you don't need to configure anything.
+- GitHub will give you SSH for free so you don't need to configure anything.
+- Any code commited to the main branch is automatically aviable to your users.
 
