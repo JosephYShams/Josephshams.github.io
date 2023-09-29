@@ -1,0 +1,675 @@
+{
+    "devices": [
+        {
+            "id": "tv",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "Turning off content recognition to stop a smart TV learning when its users are home may reduce the chance of potential vulnerabilities introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "If Content recognition is enabelled, an attacker could learn what time of day smart TV user watch programs, <u>learning</u> when a home may be unoccupied."
+                },
+                {
+                    "statement": "Powering off or disconnecting a smart TV from the internet when its smart functionalities (such as streaming services) are not needed may reduce the chance of potential vulnerabilities introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Sometimes the only way to protect smart home privacy is to <u>disconnect</u> a smart TV from the internet, losing the smart functionalities."
+                },
+                {
+                    "statement": "When discussing personal information, standing as far away from the built-in microphone on a smart TV or its remote control may reduce the chance of potential vulnerabilities introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": true
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "TVs with microphones constantly listen to their surroundings so they can react when a <u>voice</u> command is used to control a TV or perform a search, further collecting data from users."
+                }
+            ],
+            "locked": false
+        },
+        {
+            "id": "clock",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "Swapping between smart clocks and traditional clocks (to reduce the amount of a users daily schedule being learned) may reduce the chance of potential vulnerabilities (such as spying and monitoring) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        },                        
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "To stop a smart clock <u>learning</u> what time its user wakes up/go to sleep, occasionally swapping between smart and non-smart clocks."
+                },
+                {
+                    "statement": "Many smart clocks come with built-in personal assistants (such as amazon Alexa and google assistant) to help complete tasks on your behalf, such as web browsing. Disabling this feature may reduce the chance of potential vulnerabilities (such as unauthorised data manipulation) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": true
+                        },                        
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart clocks that listen for <u>voice</u> commands try to automate setting alarms that wake users up. To stop this, mute/turn off the built-in microphones."
+                },
+                {
+                    "statement": "Disconnecting a smart clock from the internet disables all smart functionalities, reducing the chance of potential vulnerabilities introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "<u>Disconnecting</u> smart clocks from the internet will disable all smart features, as well as stopping any data being collected."
+                }
+            ],
+            "locked": false
+        },
+        {
+            "id": "alarm",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "To limit the amount of data collected by a smart alarm, do not connect virtual assistants (such as Amazon Alexa) to it. This behaviour may reduce the chance of potential vulnerabilities introduced by which capability?.",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "To stop smart alarms collecting and inferring data about you, do not connect <u>voice</u> assistants (such as Amazon Alexa)."
+                },
+                {
+                    "statement": "Turning off smart alarm systems when a smart home is occupied could reduce the chance of potential vulnerabilities (such as unwanted alarm triggers and unwanted data collection) introduced by which capability?.",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "For smart alarms to work, they must be <u>connected</u> to the internet. This allows for continuous data collection. To increase privacy, disconnect smart alarms from the internet when not in use (i.e., when you are home)."
+                },
+                {
+                    "statement": "Setting up multi-factor authentication when attempting to remotely control a smart alarm when away from home may reduce the chance of potential vulnerabilities introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": true
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "<u>Remote</u> controlling your smart devices can be dangerous (especially if you are connecting through open/insecure networks). To reduce privacy risks, set up 2 Factor Authentication (2FA)."
+                }
+            ],
+            "locked": false
+        },
+        {
+            "id": "fridge",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "Disconnecting a smart fridge from the internet when its smart features are not needed may reduce the chance of potential vulnerabilities (such as unauthorised data collection) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart fridges, like all smart devices, require constant internet connections. This can lead to unwanted data collection. To stop this, <u>disconnect</u> smart fridges from the internet when the smart features are not being used."
+                },
+                {
+                    "statement": "Only connecting to third-party apps that remotely control a smart fridge while on secure networks (i.e not on open/public networks) may reduce the change of potential vulnerabilities introduced by what capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "The information that smart fridges collect could be negatively used against you. To reduce this risk, do not <u>remote</u> control your smart fridge when connected to open/public networks."
+                },
+                {
+                    "statement": "Turning off learning mode could stop a smart fridge from spying and monitoring on its users eating habits. This behaviour may reduce the chance of potential vulnerabilities introduced by what capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart fridges can <u>learn</u> and inform you when food is running low or close to its expiration date, as well as suggest recipes depending on the food in your fridge. This information could be collected and used against your wishes."
+                }
+            ],
+            "locked": false
+        },
+        {
+            "id": "thermostat",
+            "img_path": "/static/img/",
+            "capabilities": [                
+                {
+                    "statement": "Refraining from connecting to an open/public network to remote control a smart thermostat could reduce the potential vulnerabilities (such as hackers analysing a thermostat trends and learning the best time to break in) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "The information collected by smart thermostats can be used to learn when its users home is unoccupied. To reduce the risks of data leakage, do not <u>remote</u> control your smart thermostat using open/public networks."
+                },
+                {
+                    "statement": "Disabling auto-scheduling on a smart thermostat to stop the device from learning what temperature its users keep their home at may reduce the change of potential vulnerabilities (such as an adversary making adjustments to a smart thermostat temperature schedule) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Google Nest devices, for example, have learning modes where the device predicts when its users are home and turns on the thermostat. Turning off <u>learning</u> modes can stop this."
+                },
+                {
+                    "statement": "Disconnecting a smart thermostat from the internet may reduce the change of potential vulnerabilities (such as advertisers continuously collecting data about its users) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "To reduce the change of advertisers collecting data about how smart thermostats are used, <u>disconnect</u> the device from the internet when its smart functionalities are not needed."
+                }
+            ],
+            "locked": true
+        },
+        {
+            "id": "speakers",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "Muting or blocking the built-in microphone on a smart speaker when voice commands are not being used may reduce the chance of potential vulnerabilities (such as someone placing fake orders to your smart speaker) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart speakers with microphones constantly listen to their surroundings so they can react to a <u>voice</u> command. To preserve privacy, place smart speakers away from populated areas of a smart home. "
+                },
+                {
+                    "statement": "Smart speakers often are used as a source of advertising. Disconnecting a smart speaker from the internet when its smart features are not needed may reduce the chance of potential vulnerabilities (such as hacking and data collection for advertising purposes) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart speakers are designed to learn about their users and perform tasks on their behalf, this can have privacy risks! To reduce the vulnerabilities imposed, <u>disconnect</u> your smart speaker from the internet."
+                },
+                {
+                    "statement": "Turning off learning mode on a smart speaker, for example disabling the ‘By the way’ suggestions provided by Amazon Alexa, may reduce the chance of potential vulnerabilities (such as continuous audio surveillance) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Over prolonged use, smart speakers <u>learn</u> what its users optimal music volume is, for example, raising and lowering the volume to match your previous usage patterns."
+                }
+            ],
+            "locked": true
+        },
+        {
+            "id": "light",
+            "img_path": "/static/img/",
+            "capabilities": [                
+                {
+                    "statement": "Turning off learning mode on smart lights could stop unauthorised individuals from spying and monitoring device usage habits (such as what times of the day smart lights are turned on and off). This behaviour may reduce the chance of potential vulnerabilities (such as learning when a home is unoccupied) introduced by what capability?.",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart lights learn how often they are turned lights on and off, creating a pattern of when the home is occupied. To reduce this, disable the <u>learning</u> mode through the accompanying apps. (There are many online resources online to help with this task)."                },
+                {
+                    "statement": "Purchasing smart lights that only connect to the internet when the light is switched on may reduce the chance of potential vulnerabilities (such as location tracking) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart lights are almost always <u>connected</u> to the internet, making it difficult to control what data is collected. Try to only purchase smart lights that only connects to the internet when the blub is lit up, reducing the amount of data collected to an acceptable level."
+                },
+                {
+                    "statement": "Refraining from creating and using profiles that automate lights turning on and off may reduce the chance of potential vulnerabilities (such as unauthorised data collection and manipulation) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Creating a profile allows for a smart light to <u>automate</u> what time of the day the light is turned on and off. If an attacker were to gain access to the device, they could learn what time of the day the home is unoccupied."
+                }
+            ],
+            "locked": true
+        },
+        {
+            "id": "camera",
+            "img_path": "/static/img/",
+            "capabilities": [
+                {
+                    "statement": "Turning off smart cameras when a home is occupied may reduce the chance of potential vulnerabilities (such as unwanted data collection) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": true
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "To reduce the risk of unauthorised access to a smart cameras, <u>disconnect</u> it from the internet when a home is occupied."
+                },
+                {
+                    "statement": "Enabling multi-factor authentication when remotely controlling a smart camera may reduce the chance of potential vulnerabilities (such as adversarial access to a smart camera) introduced by which capability? ",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": false
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": true
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "Smart cameras can record and store personal and sensitive data (such as video/audio feeds). If an open/public network is attacked, and a smart camera is <u>remote</u> controlled over the attacked network, there is a risk that the smart camera feeds could be accessed by unauthorised parties."
+                },
+                {
+                    "statement": "Many smart cameras have two modes, live streaming and motion detection. Keeping a smart camera set to one of these two modes can reduce potential vulnerabilities (such as an unauthorised entity determining which mode a camera is in and inferring when the home is unoccupied) introduced by which capability?",
+                    "questions": [
+                        {
+                            "question": "Connectedness",
+                            "value": false
+                        },
+                        {
+                            "question": "Sensing (Learning)",
+                            "value": true
+                        },
+                        {
+                            "question": "Remote Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        }, 
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
+                        }
+                    ],
+                    "error_message": "If a smart camera cannot be disconnected from the internet, facing the camera away from populated areas is the next best step to reducing unwanted data collection and <u>learning</u>."
+                }                
+            ],
+            "locked": true
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+<div class="w3-row-padding">
+    <div class="w3-col l12 m12 w3-margin-bottom">
+        <div class="w3-card">
+            <div class="w3-container">
+                <!-- <h1 class="w3-center" >Well Done - Here Are Your Game Stats.</h1>
+                <img class="center" src="./img/happy.png" alt="tv" style="width:50%"> -->
+                <div class="w3-container">
+                    <h2>Congratulations on finishing the game!</h2>
+                    <p>Below, you will find all the smart home devices you have purchased, with the relevant
+                        configuration behaviours for each device capability. </p>
+
+                    <div class="w3-bar w3-dark=grey">
+                        <button class="w3-bar-item w3-button tablink w3-grey"
+                            onclick="ShowDeviceFinalPage(event,'smarttv')">Smart
+                            TV</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartclock')">Smart
+                            Clock</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartalarm')">Smart
+                            Alarm</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartfridge')">Smart
+                            Fridge</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartthermostat')">Smart
+                            Thermostat</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartspeaker')">Smart
+                            Speaker</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartlight')">Smart
+                            Light</button>
+                        <button class="w3-bar-item w3-button tablink"
+                            onclick="ShowDeviceFinalPage(event,'smartcamera')">Smart
+                            Camera</button>
+                    </div>
+
+                    <div id="smarttv" class="w3-container w3-border smartdevices">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart TV</h3>
+                                <img src="/static/img/tv.png" alt="smart_tv" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart TV</p>
+                            <ul>
+                                <li><b>Connectedness: </b>Sometimes the only way to protect your privacy is to
+                                    disconnect your smart TV from the internet, losing the smart functionalities. So it
+                                    is recommended that you get used to using your smart TV without connecting it to the
+                                    Internet.</li>
+                                <li><b>Learning: </b>Turn off automatic content recognition to stop smart TV's learning
+                                    what shows you like to watch.</li>
+                                <li><b>Voice Control: </b>TV's with microphones constantly listen so they can react when
+                                    you use voice commands to control your TV or perform a search. When discussing
+                                    personal information, stand as far away from smart TV remote controls as they
+                                    usually have a built-in microphone</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartclock" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Clock</h3>
+                                <img src="/static/img/clock.png" alt="smart_clock" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Clock</p>
+                            <ul>
+                                <li><b>Connectedness: </b>Disconnecting smart clocks from the internet will disable all
+                                    smart features, as well as stop any data being collected..</li>
+                                <li><b> Sensing (Learning): </b>To stop your smart clock learning what time you wake
+                                    up/go to sleep, turn off learning mode If this is not possible, then occasionally
+                                    swap between smart and non-smart clocks.</li>
+                                <li><b>Delegation (Automation): </b>Smart clocks that listen for voice commands try to
+                                    automate your alarms. To stop this, mute/ turn off the built-in microphones</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartalarm" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Alarm</h3>
+                                <img src="/static/img/alarm.png" alt="smart_alarm" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Alarm</p>
+                            <ul>
+                                <li><b>Connectedness: </b>For smart alarms to work, they must be connected to the
+                                    Internet. This allows for continuous data collection. To increase privacy,
+                                    disconnect smart alarms from the internet when not in use (i.e., when you are home).
+                                </li>
+                                <li><b>Remote Control: </b>To stop smart alarms learning and inferring information about
+                                    you, do not connect virtual assistants (such as Amazon Alexa).</li>
+                                <li><b>Voice Control: </b>Remote controlling your smart devices can be dangerous
+                                    (especially if you are connecting through open/insecure networks). To reduce privacy
+                                    risks, setup 2 Factor Authentication (2FA).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartfridge" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Fridge</h3>
+                                <img src="/static/img/fridge.png" alt="smart_fridge" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Fridge</p>
+                            <ul>
+                                <li><b>Connectedness: </b>Smart fridges, like all smart devices, require constant
+                                    Internet connections. This can lead to unwanted data collection. To stop this,
+                                    disconnect smart fridges from the internet when the smart features are not being
+                                    used.</li>
+                                <li><b>Sensing (Learning): </b>Smart fridges can learn and inform you when food is
+                                    running low or close to its expiration date, or suggesting recipes depending on the
+                                    food in your fridge. This information could be collected and used against your
+                                    wishes.</li>
+                                <li><b>Remote Control</b>The information that smart fridges collect could be negatively
+                                    used against you. To reduce this risk, do not remote control your smart fridge when
+                                    connected to open/public networks.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartthermostat" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Thermostat</h3>
+                                <img src="/static/img/thermostat.png" alt="smart_thermoatat" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Thermostat</p>
+                            <ul>
+                                <li><b>Connectedness: </b>To reduce the change of advertisers collecting data about how
+                                    smart thermostats are used, disconnect the device from the internet when its smart
+                                    functionalities are not needed.</li>
+                                <li><b>Learning (Sensing): </b>Turn off learning mode. For example, turn off
+                                    auto-schedule learning on a Nest thermostat to stop your thermostat making
+                                    adjustments to its temperature schedule and to stop the device from learning what
+                                    temperatures you like and when you like them.</li>
+                                <li><b>Remote Control: </b>The information collected by smart thermostats can be used to
+                                    learn when your home is unoccupied. To reduce the risks of data leakage, do not
+                                    remotely control your smart thermostat using open/public networks.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartspeaker" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Speaker</h3>
+                                <img src="/static/img/speakers.png" alt="smart_speaker" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Speaker</p>
+                            <ul>
+                                <li><b>Connectedness: </b>Smart speakers are designed to learn about you and perform
+                                    tasks on your behalf, this can have privacy risks! To reduce the threats imposed,
+                                    disconnect your smart speaker from the internet.</li>
+                                <li><b>Sensing (Learning): </b>Over prolonged use, smart speakers learn what your
+                                    optimal music volume is, for example, raising and lowering the volume to match your
+                                    previous usage patterns.</li>
+                                <li><b>Voice Control: </b>To preserve privacy and limit personal or sensitive data from
+                                    being learned about you, place smart speakers away from populated areas of your
+                                    home. </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartlight" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Light</h3>
+                                <img src="/static/img/light.png" alt="smart_light" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Light</p>
+                            <ul>
+                                <li><b>Connectedness: </b>Smart lights are almost always connected to the internet,
+                                    making it difficult to control what data is collected. If you purchase a smart light
+                                    that only connects to the internet when the blub is lit up, the data collections
+                                    could be reduced to an acceptable level.</li>
+                                <li><b>Sensing (Learning): </b>Creating a profile allows for your smart light to
+                                    automate how you use the device over time. If you want to reduce how much data smart
+                                    lights collect about you, do not create profiles.</li>
+                                <li><b>Delegation (Automation): </b> Smart lights learn how often you turn lights on and
+                                    off, creating a pattern of when your home is occupied. To reduce this, disable the
+                                    learning mode through the accompanying apps. (You may need to find resources online
+                                    to help you).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="smartcamera" class="w3-container w3-border smartdevices" style="display:none">
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <div class="w3-container w3-center">
+                                <h3 class="w3-center" style="font-size:1vw;">Smart Camera</h3>
+                                <img src="/static/img/camera.png" alt="smart_camera" style="width:80%">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w3-col w3-container m4 l6 w3">
+                            <p>The following are configuration behaviours you can perform to limit the privacy risks
+                                associated with a Smart Camera</p>
+                            <ul>
+                                <li><b>Connectedness:</b> To reduce the risk of unauthorised access to your smart
+                                    cameras, disconnect your smart cameras from the internet when you are home.</li>
+                                <li><b>Sensing (Learning): </b>If you cannot disconnect your camera from the internet,
+                                    facing the camera away from populated areas is the next best step to reducing
+                                    unwanted data collection and learning. </li>
+                                <li><b>Remote Control: </b>Smart cameras can record and store personal and sensitive
+                                    data (such as video/audio feeds). If an open/public network is attacked, and you
+                                    connect to the attacked network to remote control your smart camera, there is a risk
+                                    that your camera feeds could be accessed by unauthorised parties.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <p><button id="" class="w3-button w3-amber w3-block" onclick="downloadPage()">Download Cheat
+                        sheet</button></p>
+                    <p><button id="end_of_study_button" class="w3-button w3-amber w3-block" onclick="redirectToThirdPartOfTheStudy()">Move onto the third part of this
+                        study.</button></p>
+            </div>
+        </div>
+    </div>
+</div>

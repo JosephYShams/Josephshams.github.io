@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Home Devices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
+
+    <script src="./static/js/routines.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+    
+<script>
+    $(document).ready(function () {
+        
+        document.getElementById('splashscreenmodal').style.display = 'block';
+        // LoadHTML('quick_help', 'quick_help');
+        GetGameDevices('available_devices', 'available_devices');
+        ShowPurchaseHistory('purchase_history');
+
+        document.getElementById("rules_glow_id").addEventListener("click", RemoveRulesGlow);
+
+        function RemoveRulesGlow() {
+            document.getElementById("rules_glow_id").classList.remove("glow_rules_button");
+            document.getElementById("tips_glow_id").classList.add("glow_tips_button");
+            document.getElementById("tips_glow_id").addEventListener("click", RemoveTipsGlow);
+        }
+
+        function RemoveTipsGlow() {
+            document.getElementById("tips_glow_id").classList.remove("glow_tips_button");
+        }
+        
+    });
+
+    const game_url = window.location;
+    const game_url_search = new URLSearchParams(game_url.search);
+
+    const prolific_id = game_url_search.get('PROLIFIC_PID');
+
+    // Old third part of the study
+    // var third_part_of_the_study = `https://qualtrics.kcl.ac.uk/jfe/form/SV_0rgHd6yFDiSQi0K?PROLIFIC_PID=${prolific_id}`;
+
+    var third_part_of_the_study = `https://qualtrics.kcl.ac.uk/jfe/form/SV_cIIw2CVECpAdoYC?PROLIFIC_PID=${prolific_id}`;
+
+    // ?PROLIFIC_PID=607ffeb27e34d536e2a4fc67&STUDY_ID=6398e38c94ca29792a02f855&SESSION_ID=04ru5foz9ren
+</script>
+
+
+</head>
+
+<body>
+    
+<div class="w3-top">
+    <div class="w3-row w3-bar w3-light-grey w3-card" id="myNavbar">
+
+        <a onclick="Restart()" class="w3-bar-item w3-button w3-right w3-xlarge" style="margin-right: 20px">
+            <i class="fa fa-refresh w3-text-orange"> Restart</i>
+        </a>
+
+        <a id="tips_glow_id" href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-xlarge"
+            onclick="tipsmenu()">
+            <i class="fa fa-lightbulb-o w3-text-black"> Tips</i>
+        </a>
+
+        <a id="rules_glow_id" href="javascript:void(0)"
+            class="w3-bar-item w3-button w3-right w3-xlarge glow_rules_button" onclick="menu()">
+            <i class="fa fa-bars w3-text-blue"> Rules</i>
+        </a>
+
+        <span class="w3-bar-item w3-wide w3-hide-medium w3-hide-small w3-left"
+            style="margin: 15px 0 0 20px; font-weight: bolder;">
+            Smart Home Device Configuration
+        </span>
+
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right"
+        style="display:none;right:0;width:35%; padding:10px" id="menu">
+        <button onclick="menu()" class="w3-bar-item w3-button w3-xlarge"><i class="fa fa-close"></i> Close</button>
+        <hr />
+        <div id="menu_help"></div>
+    </div>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right"
+        style="display:none;right:0;width:35%; padding:10px" id="tips">
+        <button onclick="tipsmenu()" class="w3-bar-item w3-button w3-xlarge"><i class="fa fa-close"></i>
+            Close</button>
+        <hr />
+        <div id="tips_menu"></div>
+    </div>
+
+</div>
+
+<div id="devices_selection" class="bgimg-2 w3-container " style="margin-top: 90px; display: block">
+    <div class="w3-row-padding ">
+        <div class="w3-col l8 m8 w3-margin-bottom" id="available_devices"></div>
+        <div class="w3-col l4 m4 w3-margin-bottom w3-large">
+            <div class="w3-row-padding w3-panel w3-topbar w3-bottombar w3-blue-grey w3-light-grey"
+                id="purchase_history"></div>
+
+            <div id="unlocked_locked_devices_alert" class="w3-panel w3-pale-green w3-border" style="display: none;">
+                <h3>Congratulations!</h3>
+                <p>You can now register the remaining 4 of your smart home devices.</p>
+                <p>Click the "Unlock" button below to continue.</p>
+                <p><button class="w3-button w3-block w3-green" onclick="UnlockLockedDevices()">Unlock</button></p>
+            </div>
+
+            <div class="w3-row" style="padding-bottom: 10px;">
+                <div class="w3-col w3-container m4">
+                    <p class="w3-center">Game progress (%)</p>
+                </div>
+                <div class="w3-col w3-container m8">
+                    <div id="progress" class="w3-section w3-light-grey" style="border: 1px solid #c0c0c0"></div>
+                </div>
+            </div>
+
+            <div class="w3-row-padding ">
+                <div class="w3-container" id="quick_help">
+                    <ul class="w3-ul" style="width:100%">
+                        <li><i class="fa fa-bars w3-text-blue w3-xlarge"> Rules</i> button to display the rules of
+                            this
+                            educational game.</li>
+                        <li><i class="fa fa-lightbulb-o w3-text-black w3-xlarge"> Tips</i> to open the tips menu
+                            anywhere during gameplay.</li>
+                        <li><i class="fa fa-refresh w3-text-orange w3-xlarge"></i> Restart</i> button to restart the
+                            game.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bgimg-2 w3-container" style="padding-top:90px; display: none" id="device"></div>
+<div id="splashscreenmodal" class="w3-modal">
+    <div class="w3-modal-content">
+        <div class="w3-container w3-panel">
+            <div id="" class="w3-margin-bottom w3-margin-top">
+                <div>
+                    <div class="w3-container">
+                        <span onclick="document.getElementById('splashscreenmodal').style.display='none'">
+                            <h4>Welcome to the smart home configuration game.</h4>
+                            <p> This game aims to teach you what capabilities smart home devices can perform and
+                                the different
+                                ways you can interact with the device to limit the privacy risks each capability can
+                                introduce. </p>
+                            <p>You start the game with 8 smart home devices.</p>
+                            <p>You must register all 8 smart home devices. To register a device, you must first
+                                complete a configuration test for each device.</p>
+                            <ul>
+                                <li>There is no time limit for this game, we expect it to last between 15
+                                    and
+                                    30 minutes.
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="w3-container w3-light-grey w3-padding"> 
+            <label class="container">Check here to confirm you have read the above and have started audio recording
+                yourself.
+                <input id="chechtostartgame" class="w3-check" id="splashscreen_confirm" onchange="isChecked(this, 'start_game_btn')"
+                    type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <button id="start_game_btn" class="w3-button w3-right w3-white w3-border"
+                onclick=" document.getElementById('splashscreenmodal').style.display='none'" disabled>Start
+                Game</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

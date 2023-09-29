@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Smart Home Devices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+
+    <script src="/static/js/routines.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+
+    
+<!-- @book{o2015essential,
+  title={Essential Guide to Smart Home Automation Safety \& Security: Use Home Automation to Increase Your Families Safety Levels (Smart Home Automation Essential Guides)-Volume 3},
+  author={O'Driscoll, Gerard},
+  year={2015},
+  publisher={CreateSpace Independent Publishing Platform}
+} -->
+
+<script>
+    $(document).ready(function () {
+        
+        document.getElementById('splashscreenmodal').style.display = 'block';
+        // LoadHTML('quick_help', 'quick_help');
+        GetGameDevices('available_devices', 'available_devices');
+        ShowPurchaseHistory('purchase_history');
+
+        document.getElementById("rules_glow_id").addEventListener("click", RemoveRulesGlow);
+
+        function RemoveRulesGlow() {
+            document.getElementById("rules_glow_id").classList.remove("glow_rules_button");
+            document.getElementById("tips_glow_id").classList.add("glow_tips_button");
+            document.getElementById("tips_glow_id").addEventListener("click", RemoveTipsGlow);
+        }
+
+        function RemoveTipsGlow() {
+            document.getElementById("tips_glow_id").classList.remove("glow_tips_button");
+        }
+        
+    });
+
+    const game_url = window.location;
+    const game_url_search = new URLSearchParams(game_url.search);
+
+    const prolific_id = game_url_search.get('PROLIFIC_PID');
+
+    // Old third part of the study
+    // var third_part_of_the_study = `https://qualtrics.kcl.ac.uk/jfe/form/SV_0rgHd6yFDiSQi0K?PROLIFIC_PID=${prolific_id}`;
+
+    var third_part_of_the_study = `https://qualtrics.kcl.ac.uk/jfe/form/SV_2oftYx85J7GVOfQ?PROLIFIC_PID=${prolific_id}`;
+
+    // ?PROLIFIC_PID=607ffeb27e34d536e2a4fc67&STUDY_ID=6398e38c94ca29792a02f855&SESSION_ID=04ru5foz9ren
+</script>
+
+
+</head>
+
+<body>
+    
+<div style="text-align: center">
+    <iframe src="./static/data/controlpdf.pdf" height="800em" width="100%">
+
+    </iframe>
+</div>
+
+<div class="w3-top">
+  <div class="w3-row w3-bar w3-light-grey w3-card" id="myNavbar">
+      <span class="w3-bar-item w3-wide w3-hide-medium w3-hide-small w3-left"
+          style="margin: 15px 0 0 20px; font-weight: bolder;">
+          Smart Home configuration study
+      </span>
+
+  </div>
+</div>
+
+
+<div class="bgimg-2 w3-container" style="padding-top:90px; display: none" id="device"></div>
+<p><button id="end_of_study_button" class="w3-button w3-amber w3-block" onclick="redirectToThirdPartOfTheStudy()">Move onto the third part of this
+  study.</button></p>
+<div id="splashscreenmodal" class="w3-modal">
+  <div class="w3-modal-content">
+      <div class="w3-container w3-panel">
+          <div id="" class="w3-margin-bottom w3-margin-top">
+              <div>
+                  <div class="w3-container">
+                      <span onclick="document.getElementById('splashscreenmodal').style.display='none'">
+                          <h4>Welcome to part 2 of the smart home configuration study.</h4>
+                          <p> The aim of this infomration sheet is to teach you about smart home device privacy and security.
+                          <p>Your task is to read through as much of the information sheet as you can. </p>
+                          <ul>
+                              <li>There is no time limit for this part of the study, we expect it to last 30 minutes.
+                              </li>
+                              <li>When you ready to move to the final stage of this study, click the button at the bottom of the page.</li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+
+
+      </div>
+      <div class="w3-container w3-light-grey w3-padding"> 
+          <label class="container">Check here to confirm you have read the above.
+              <input id="chechtostartgame" class="w3-check" id="splashscreen_confirm" onchange="isChecked(this, 'start_game_btn')"
+                  type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <button id="start_game_btn" class="w3-button w3-right w3-white w3-border"
+              onclick=" document.getElementById('splashscreenmodal').style.display='none'" disabled>Start</button>
+      </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
