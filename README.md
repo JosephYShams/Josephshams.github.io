@@ -4,10 +4,12 @@
 
 #### To run the work locally for development
 
-Test the site using `docker run -p 80:80 -v ${pwd}:/usr/share/nginx/html nginx` from windows OS   
-Test the site using `docker run -p 80:80 -v $(pwd):/usr/share/nginx/html nginx` from Linux OS
+- `git clone https://github.com/JosephYShams/Josephshams.github.io.git`
+- Using VS to edit your code
+- Test the site using `docker run -p 80:80 -v ${pwd}:/usr/share/nginx/html nginx` from windows OS   
+- Or `docker run -p 80:80 -v $(pwd):/usr/share/nginx/html nginx` from Linux OS
 
-Run the docker command from the root of your site.
+#### Run the docker command from the root of your site.
 
 If you want to know what needs to be done to get your static site hosted on GitHub watch these two videos:
 
