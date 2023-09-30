@@ -1,5 +1,9 @@
 ﻿# Josephshams.github.io
 
+**Important**: Since this site is public the first thing to do is to protect the site, i.e. only you as the owner can update the contect.
+
+#### To run the work locally for development
+
 Test the site using `docker run -p 80:80 -v ${pwd}:/usr/share/nginx/html nginx` from windows OS   
 Test the site using `docker run -p 80:80 -v $(pwd):/usr/share/nginx/html nginx` from Linux OS
 
