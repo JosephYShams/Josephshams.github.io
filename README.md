@@ -1,8 +1,8 @@
 ﻿# Josephshams.github.io
 
-#### **Important**: Since this site is public the first thing to do is to protect the site, i.e. only you as the owner can update the content.
+#### Important: Since this site is public the first thing to do is to protect the site, i.e. only you as the owner can update the content.
 
-#### To run the work locally for development
+#### To run the code locally for development
 
 - `git clone https://github.com/JosephYShams/Josephshams.github.io.git`
 - Using VS to edit your code
