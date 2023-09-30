@@ -14,5 +14,6 @@ If you want to know what needs to be done to get your static site hosted on GitH
 
 - GitHub will give you SSH for free so you don't need to configure anything.
 - Any code commited to the main branch is automatically aviable to your users.
+- Sometimes **it can take a few minutes for updates to show** on the site. 
 - The last bit is for me to add some A records to AWS Route53 (our domains registrar and DNS server).
 
