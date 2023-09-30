@@ -1,6 +1,6 @@
 ﻿# Josephshams.github.io
 
-**Important**: Since this site is public the first thing to do is to protect the site, i.e. only you as the owner can update the contect.
+#### **Important**: Since this site is public the first thing to do is to protect the site, i.e. only you as the owner can update the content.
 
 #### To run the work locally for development
 
