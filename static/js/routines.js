@@ -1,7 +1,7 @@
 app_data = {
     "html_folder": "../html/",
     "data_folder": "../data/",
-    "max_purchases": 8,
+    "max_purchases": 1,
     "device_list": {},
     "purchases": []
 }
