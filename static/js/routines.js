@@ -209,7 +209,7 @@ function ShowPurchaseHistory(el_id) {
 function GameFinished() {
     document.getElementById('device').style.display = 'none';
     document.getElementById('devices_selection').style.display = 'block';
-    LoadHTML('time_out', 'available_devices');
+    LoadHTML('time_out');
     console.log(third_part_of_the_study);
     // console.log(document.getElementById("end_of_study"));
 
