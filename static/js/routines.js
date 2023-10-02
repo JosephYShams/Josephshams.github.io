@@ -14,7 +14,7 @@ device_for_final_page = "smarttv";
 app_data_path = "../data/app_data.json";
 
 function LoadHTML(page, el_id) {
-    fetch(`${app_data["html_folder"]}${page}.html`)
+    fetch(`${app_data["html"]}${page}.html`)
         .then(response => response.text())
         .then(text => {
             if (el_id) {
@@ -209,7 +209,7 @@ function ShowPurchaseHistory(el_id) {
 function GameFinished() {
     document.getElementById('device').style.display = 'none';
     document.getElementById('devices_selection').style.display = 'block';
-    LoadHTML('time_out');
+    LoadHTML('time_out', 'available_devices');
     console.log(third_part_of_the_study);
     // console.log(document.getElementById("end_of_study"));
 
