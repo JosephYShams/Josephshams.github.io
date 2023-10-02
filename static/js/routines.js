@@ -1,5 +1,5 @@
 app_data = {
-    "html_folder": "../html/",
+    "html_folder": "../static/html/",
     "data_folder": "../data/",
     "max_purchases": 1,
     "device_list": {},
@@ -14,7 +14,7 @@ device_for_final_page = "smarttv";
 app_data_path = "../data/app_data.json";
 
 function LoadHTML(page, el_id) {
-    fetch(`${app_data["html"]}${page}.html`)
+    fetch(`${app_data["html_folder"]}${page}.html`)
         .then(response => response.text())
         .then(text => {
             if (el_id) {
