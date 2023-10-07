@@ -384,6 +384,14 @@
                         {
                             "question": "Remote Control",
                             "value": false
+                        },
+                        {
+                            "question": "Voice Control",
+                            "value": false
+                        },
+                        {
+                            "question": "Delegation (Automation)",
+                            "value": false
                         }
                     ],
                     "error_message": "Google Nest devices, for example, have learning modes where the device predicts when its users are home and turns on the thermostat. Turning off <u>learning</u> modes can stop this."
