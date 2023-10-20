@@ -250,7 +250,9 @@
                             "value": false
                         }
                     ],
-                    "error_message": "<u>Remote</u> controlling your smart devices can be dangerous (especially if you are connecting through open/insecure networks). To reduce privacy risks, set up 2 Factor Authentication (2FA)."
+                    
+                    "error_message": "<u>Remote</u> controlling your smart devices can be dangerous (especially if you are connecting through open/insecure networks). To reduce privacy and security threats, enabling Multi-Factor Authentication wherever possible introduces two forms of authentication, adding an additional layer of security."
+                
                 }
             ],
             "locked": false
@@ -368,8 +370,7 @@
                             "value": false
                         }
                     ],
-                    "error_message": "The information collected by smart thermostats can be used to learn when its users home is unoccupied. To reduce the risks of data leakage, do not <u>remote</u> control your smart thermostat using open/public networks."
-                },
+                    "error_message": "The information collected by smart thermostats can be used to learn when its users home is unoccupied. To reduce the risks of data leakage, do not <u>remote</u> control your smart thermostat using open/public networks. Without setting up a virtual private network (VPN) for secure remote access to your smart home devices. This adds an extra layer of encryption and security when controlling devices remotely."                },
                 {
                     "statement": "Disabling auto-scheduling on a smart thermostat to stop the device from learning what temperature its users keep their home at may reduce the change of potential vulnerabilities (such as an adversary making adjustments to a smart thermostat temperature schedule) introduced by which capability? ",
                     "questions": [
