@@ -113,8 +113,9 @@
                             "value": false
                         }
                     ],
-                    "error_message": "To stop a smart clock <u>learning</u> what time its user wakes up/go to sleep, occasionally swapping between smart and non-smart clocks. To learn about data collection by your smart clock, review the privacy policies located on the smart home device manufacturers website."                 },
-                {
+                    "error_message": "To stop a smart clock <u>learning</u> what time its user wakes up/go to sleep, occasionally swapping between smart and non-smart clocks. To learn about data collection by your smart clock and how you can give or remove consent, review the privacy policies located on the smart home device manufacturers website."  },
+
+                    {
                     "statement": "Many smart clocks come with built-in personal assistants (such as amazon Alexa and google assistant) to help complete tasks on your behalf, such as web browsing. Disabling this feature may reduce the chance of potential vulnerabilities (such as unauthorised data manipulation) introduced by which capability? ",
                     "questions": [
                         {
