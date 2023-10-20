@@ -563,7 +563,7 @@
                             "value": false
                         }
                     ],
-                    "error_message": "Smart lights are almost always <u>connected</u> to the internet, making it difficult to control what data is collected. Try to only purchase smart lights that only connects to the internet when the blub is lit up, reducing the amount of data collected to an acceptable level."
+                    "error_message": "Smart lights are almost always <u>connected</u> to the internet, making it difficult to control what data is collected. Try to only purchase smart lights that can function without a constant internet connection such as the Philips Hue smart light. "
                 },
                 {
                     "statement": "Refraining from creating and using profiles that automate lights turning on and off may reduce the chance of potential vulnerabilities (such as unauthorised data collection and manipulation) introduced by which capability?",
