@@ -675,8 +675,7 @@
                             "value": false
                         }
                     ],
-                    "error_message": "If a smart camera cannot be disconnected from the internet, facing the camera away from populated areas is the next best step to reducing unwanted data collection and <u>learning</u>."
-                }                
+                    "error_message": " The trade-off between smart home privacy and convenience involves the choice between enjoying the sense of security offered my smart cameras while potentially exposing personal data to data collection and security risks. If a smart camera cannot be disconnected from the internet, facing the camera away from populated areas is the next best step to reducing unwanted data collection and <u>learning</u>."                }                
             ],
             "locked": true
         }
